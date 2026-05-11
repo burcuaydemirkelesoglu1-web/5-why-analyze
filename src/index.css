@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: rgb(2, 6, 23);
+  --color-slate-900: rgb(15, 23, 42);
+  --color-slate-800: rgb(30, 41, 59);
+  --color-gray-700: rgb(55, 65, 81);
+  --color-gray-400: rgb(156, 163, 175);
+  --color-gray-100: rgb(243, 244, 246);
+  --color-emerald-500: rgb(16, 185, 129);
+  --color-emerald-400: rgb(52, 211, 153);
+  --color-sky-400: rgb(56, 189, 248);
+  --color-red-500: rgb(239, 68, 68);
+  --color-red-900: rgb(153, 27, 27);
+  --color-amber-500: rgb(245, 158, 11);
+  --color-amber-900: rgb(120, 53, 15);
+}
+
+/* Capture Mode for Clean Exports */
+.capture-mode {
+  background-color: white !important;
+  color: black !important;
+}
+
+.capture-mode * {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: black !important;
+}
+
+.capture-mode .node-header-label {
+  background-color: black !important;
+  color: white !important;
+  padding: 2px 8px !important;
+  border-radius: 2px !important;
+  display: inline-block !important;
+  position: absolute !important;
+  top: -20px !important;
+}
+
+.capture-mode .connector-line, .capture-mode .branch-line {
+  border-bottom: 2px solid black !important;
+}
+ 
+.capture-mode .connector-arrow, .capture-mode .branch-arrow {
+  color: black !important;
+}
+
+.capture-mode .vertical-connector {
+  border-left: none !important;
+}
+
+.capture-mode .vertical-connector.border-l {
+  border-left: 2px solid black !important;
+}
+
+.capture-mode .node-card-container {
+  border: 1.5px solid black !important; /* "Neden kutucukları görünsün" */
+  background-color: white !important;
+  padding: 1rem !important;
+}
+
+.capture-mode .precaution-container {
+  border: 1.5px solid black !important;
+  background-color: white !important;
+  padding: 1rem !important;
+}
+
+.capture-mode textarea, .capture-mode input {
+  background-color: white !important;
+  border: none !important;
+  border-bottom: 1px solid #ddd !important;
+  color: black !important;
+}
+
+.capture-mode .bg-slate-900, .capture-mode .bg-slate-800 {
+  background-color: white !important;
+}
+
+
